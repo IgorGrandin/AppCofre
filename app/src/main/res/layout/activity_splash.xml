@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96cde6"
+    app:layoutDescription="@xml/motionscene"
+    tools:context=".test">
+
+    <ImageView
+        android:id="@+id/imgCofre1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        android:src="@drawable/cofre1"/>
+
+    <ImageView
+        android:id="@+id/imgCofre2"
+        android:layout_width="85dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgCofre1"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="@id/imgCofre1"
+        app:layout_constraintRight_toRightOf="@id/imgCofre1"
+        app:layout_constraintTop_toTopOf="@id/imgCofre1"
+        app:layout_constraintVertical_bias="0.507"
+        android:src="@drawable/cofre2"/>
+
+    <ImageView
+        android:id="@+id/imgCofre3"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCofre2"
+        app:layout_constraintEnd_toEndOf="@+id/imgCofre2"
+        app:layout_constraintStart_toStartOf="@+id/imgCofre2"
+        app:layout_constraintTop_toTopOf="@+id/imgCofre2"
+        android:src="@drawable/cofre3"/>
+
+    <TextView
+        android:id="@+id/txtIgor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:text="By: Igor Grandin"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCofre1"
+        app:layout_constraintVertical_bias="0.938" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

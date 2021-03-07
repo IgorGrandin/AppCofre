@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96cde6"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtAppCofre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="App"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCofre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAppCofre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cofre"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCofre"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppCofre" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/transparency"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppCofre2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Serviço:"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <EditText
+                android:id="@+id/edtServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:inputType="textPersonName"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/txtServico" />
+
+            <TextView
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Usuário:"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/edtServico" />
+
+            <EditText
+                android:id="@+id/edtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:inputType="textPersonName"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/txtUsuario" />
+
+            <TextView
+                android:id="@+id/txtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Senha:"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@id/edtUsuario" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:inputType="textPersonName"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:onClick="clickBtnEditar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgCofre"
+        android:layout_width="128dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/cofre"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
